@@ -8,12 +8,10 @@ Examples:
 */
 function doubleValues(arr){
     let doubles = [];
-    for (let i=0; i < arr.length; i++) {
-       const doublesNew = (arr[i] * 2);
-       doubles.push(doublesNew);
-       
-    }
-   return doubles;  
+    arr.forEach(function(val) {
+        doubles.push(val * 2);
+    });
+    return doubles;
 }
 
 /*
@@ -25,7 +23,13 @@ Examples:
 
 */
 function onlyEvenValues(arr){
-    
+    let evens = [];
+    arr.forEach(function(val) {
+        if( val % 2 === 0) {
+            evens.push(val); 
+        };           
+    });
+    return evens;
 }
 
 /*
