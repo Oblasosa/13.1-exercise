@@ -9,7 +9,7 @@ Examples:
 function doubleValues(arr){
     let doubles = [];
     for (let i=0; i < arr.length; i++) {
-       doublesNew = (arr[i] * 2);
+       const doublesNew = (arr[i] * 2);
        doubles.push(doublesNew);
        
     }
